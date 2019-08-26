@@ -8,6 +8,20 @@ import com.hibernate.HibernateUtil;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 
+	private static EmployeeDaoImpl employeeDaoImpl = null;
+
+	private EmployeeDaoImpl() {
+
+	}
+
+	public static EmployeeDaoImpl getEmployeeImplInstance() {
+
+		if (employeeDaoImpl == null) {
+			employeeDaoImpl = new EmployeeDaoImpl();
+		}
+
+		return employeeDaoImpl;
+	}
 
 	public Employee login(String userName, String password) {
 		Session session = HibernateUtil.getCurrentSession();
@@ -16,8 +30,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	}
 
 	public Employee register(Employee employee) {
-		
-		return null;
+		Session session = HibernateUtil.getCurrentSession();
+		session.beginTransaction();
+		session.persist(employee);
+		session.getTransaction().commit();
+		return employee;
 	}
 
 }

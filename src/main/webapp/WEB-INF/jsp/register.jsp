@@ -22,6 +22,10 @@
 						<td><input type="password" name="password" required /></td>
 					</tr>
 					<tr>
+						<td>Confirm Password</td>
+						<td><input type="password" name="cpassword" required /></td>
+					</tr>
+					<tr>
 						<td>Email</td>
 						<td><input type="text" name="email" required /></td>
 					</tr>
@@ -31,7 +35,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Login" /></td>
+						<td><input type="submit" value="Register" /></td>
 					</tr>
 				</table>
 
