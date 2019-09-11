@@ -12,6 +12,7 @@
 	<div>
 		<h3>Login</h3>
 		<div>
+			
 			<form action="doLogin" method="post">
 				<table>
 					<tr>
