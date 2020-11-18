@@ -3,7 +3,7 @@ package com.test.hibernate;
 import org.hibernate.Session;
 
 import com.employee.bean.Employee;
-import com.hibernate.HibernateUtil;
+import com.hibernates.HibernateUtil;
 
 public class HibernateTest {
 	public static void main(String[] args) {

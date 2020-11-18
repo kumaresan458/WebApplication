@@ -8,7 +8,7 @@ import org.hibernate.Session;
 import com.employee.bean.Employee;
 import com.employee.dao.EmployeeDao;
 import com.employee.dao.base.BaseDao;
-import com.hibernate.HibernateUtil;
+import com.hibernates.HibernateUtil;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 
